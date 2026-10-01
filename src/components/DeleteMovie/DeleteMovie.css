@@ -1,29 +1,26 @@
 .delete-modal-outer {
   position: fixed;
-  top: 30%;
-  left: 30%;
-
+  inset: 0;
   z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .delete-modal-con {
-  position: fixed;
   background-color: #231c6b;
-  margin: auto;
-
   border: white solid 3px;
   padding: 1vw;
   box-sizing: border-box;
-
-  z-index: 1000;
-
   border-radius: 5px;
   width: 40%;
-
+  max-width: 600px;
+  min-width: 300px;
   display: flex;
   flex-direction: column;
   gap: 1vw;
-
   justify-content: center;
   box-shadow: #ff4f8b 8px 8px 0;
 }
@@ -31,14 +28,13 @@
 .delete-modal-con .movie-title {
   color: white;
   font-size: 1.5vw;
-  margin: 0%;
+  margin: 0;
   font-weight: bold;
 }
 
 .details-content {
   display: flex;
   gap: 1vw;
-
   width: 100%;
   color: #8985b9;
 }
@@ -58,6 +54,7 @@
   border-radius: 50px;
   color: white;
   background-color: #231c6b;
+  cursor: pointer;
 }
 
 .close-delete-btn-con .delete {

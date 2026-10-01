@@ -11,28 +11,26 @@
   display: flex;
   gap: 1vw;
   overflow-x: auto;
+  width: 100%;
+  padding-bottom: 5px;
+  box-sizing: border-box;
+  scrollbar-width: none;
 }
 
 .category-bar::-webkit-scrollbar {
-  height: 5px;
-}
-
-.category-bar::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-.category-bar::-webkit-scrollbar-thumb {
-  background-color: transparent;
-  border-radius: 50px;
+  display: none;
 }
 
 .category-bar span {
+  flex-shrink: 0;
   background-color: #231c6b;
   border: solid white 1px;
   color: white;
   padding: 0.2vw 1vw;
   border-radius: 50px;
   width: max-content;
+  cursor: pointer;
+  white-space: nowrap;
 }
 
 .movies-list-grid {

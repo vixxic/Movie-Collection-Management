@@ -9,16 +9,16 @@
   color: #15104a;
   border-radius: 15px;
   padding: 0 0.5vw;
-
   display: inline-block;
   transform: rotate(-4deg);
-
   box-shadow: #231c6b 8px 8px 2px;
 }
 
 .des-and-add-btn {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  gap: 1vw;
 }
 
 .website-des {
@@ -33,6 +33,7 @@
   padding: 0.8vw 1.5vw;
   border-radius: 50px;
   font-weight: 550;
+  cursor: pointer;
 }
 
 .search-filter-con {
@@ -46,6 +47,7 @@
   width: 85%;
   border-radius: 5px;
   padding: 0.5vw 1vw;
+  box-sizing: border-box;
 }
 
 .search-input-con input {
@@ -69,12 +71,15 @@
   border-radius: 5px;
   padding: 0.5vw 1vw;
   color: #8985b9;
+  box-sizing: border-box;
 }
 
 .filter-con select {
   background-color: #231c6b;
   border: none;
   color: white;
+  width: 100%;
+  cursor: pointer;
 }
 
 .filter-con select:focus {

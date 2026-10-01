@@ -21,3 +21,284 @@ body {
 
   z-index: 10;
 }
+
+@media screen and (max-width: 1024px) {
+  .website-content {
+    padding: 10px !important;
+  }
+
+  .category-bar {
+    padding: 10px 0 !important;
+  }
+
+  .search-filter-con {
+    padding: 10px 0 !important;
+  }
+
+  #header-section .header-title {
+    font-size: 50px;
+  }
+
+  #header-section .website-des {
+    font-size: 16px;
+  }
+
+  .movies-list-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 15px;
+  }
+
+  .movie-card {
+    height: 55vw !important;
+  }
+
+  .about-the-movie-con {
+    padding: 10px !important;
+  }
+
+  .about-the-movie-con .title {
+    font-size: 18px !important;
+  }
+
+  .add-movie-form-con {
+    width: 50% !important;
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .details-con {
+    width: 60% !important;
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .details-con .movie-title {
+    font-size: 22px;
+  }
+
+  .delete-modal-con {
+    width: 60% !important;
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .delete-modal-con .movie-title {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .movies-list-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px !important;
+  }
+
+  .movie-card {
+    height: 110vw !important;
+  }
+
+  .movie-poster-rating-con {
+    height: 60%;
+  }
+
+  .movie-poster-rating-con .rating {
+    width: 35px;
+    height: 35px;
+    margin: 8px 8px 0 0;
+    border-width: 2px;
+    font-size: 14px !important;
+  }
+
+  .about-the-movie-con {
+    padding: 8px;
+    gap: 5px;
+  }
+
+  .about-the-movie-con .title {
+    font-size: 14px !important;
+    margin-bottom: 5px !important;
+  }
+
+  .about-the-movie-con .director-year {
+    font-size: 11px;
+  }
+
+  .about-the-movie-con .genre {
+    font-size: 9px;
+    padding: 3px 7px;
+  }
+
+  .action-bar {
+    padding: 10px !important;
+    gap: 5px;
+  }
+
+  .action-bar button {
+    padding: 5px 3px;
+    font-size: 10px;
+  }
+
+  #header-section .header-title {
+    font-size: 36px;
+  }
+
+  #header-section .website-des {
+    font-size: 12px;
+  }
+
+  .des-and-add-btn {
+    align-items: flex-start;
+  }
+
+  .add-btn-con button {
+    padding: 8px 14px;
+    font-size: 11px;
+    white-space: nowrap;
+  }
+
+  .search-filter-con {
+    gap: 8px;
+  }
+
+  .search-input-con {
+    width: 70% !important;
+    padding: 9px 12px;
+  }
+
+  .search-input-con input {
+    font-size: 12px;
+  }
+
+  .filter-con {
+    width: 30%;
+    padding: 9px 8px;
+  }
+
+  .filter-con select {
+    font-size: 11px;
+  }
+
+  .add-movie-form-outer {
+    padding: 15px;
+  }
+
+  .add-movie-form-con {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: none;
+    padding: 15px;
+    gap: 12px;
+  }
+
+  .add-movie-form-con h3 {
+    font-size: 18px;
+  }
+
+  .form-input-con input {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+
+  .horizontal {
+    gap: 8px;
+  }
+
+  .image-part {
+    gap: 8px;
+  }
+
+  .details-outer {
+    padding: 15px;
+  }
+
+  .details-con {
+    width: 100% !important;
+    max-width: none;
+    padding: 15px;
+    gap: 12px;
+  }
+
+  .details-con .movie-title {
+    font-size: 20px;
+  }
+
+  .details-content {
+    gap: 10px;
+    font-size: 12px;
+  }
+
+  .movie-img-con {
+    width: 35%;
+  }
+
+  .delete-modal-outer {
+    padding: 15px;
+  }
+
+  .delete-modal-con {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: none;
+    padding: 15px;
+    gap: 12px;
+  }
+
+  .delete-modal-con .movie-title {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  #header-section .header-title {
+    font-size: 30px;
+  }
+
+  #header-section .website-des {
+    font-size: 11px;
+  }
+
+  .add-btn-con button {
+    padding: 7px 10px;
+    font-size: 10px;
+  }
+
+  .movies-list-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .movie-card {
+    height: 125vw !important;
+  }
+
+  .search-filter-con {
+    flex-direction: column;
+  }
+
+  .search-input-con {
+    width: 100% !important;
+  }
+
+  .filter-con {
+    width: 100%;
+  }
+
+  .horizontal {
+    flex-direction: column;
+  }
+
+  .image-part {
+    flex-direction: column;
+  }
+
+  .image-input {
+    width: 100%;
+  }
+
+  .img-preview-con {
+    width: 100%;
+  }
+
+  .img-preview-con .img-con {
+    min-height: 120px;
+  }
+}

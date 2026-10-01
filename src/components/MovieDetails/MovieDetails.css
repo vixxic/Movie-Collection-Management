@@ -1,29 +1,25 @@
 .details-outer {
   position: fixed;
-  top: 20%;
-  left: 25%;
-
+  inset: 0;
   z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .details-con {
-  position: fixed;
   background-color: #231c6b;
-  margin: auto;
-
   border: white solid 3px;
   padding: 1vw;
   box-sizing: border-box;
-
-  z-index: 1000;
-
   border-radius: 5px;
   width: 40%;
-
+  max-width: 700px;
   display: flex;
   flex-direction: column;
   gap: 1vw;
-
   justify-content: center;
   box-shadow: #ff4f8b 8px 8px 0;
 }
@@ -31,14 +27,13 @@
 .details-con .movie-title {
   color: white;
   font-size: 1.5vw;
-  margin: 0%;
+  margin: 0;
   font-weight: bold;
 }
 
 .details-content {
   display: flex;
   gap: 1vw;
-
   width: 100%;
   color: #8985b9;
 }
@@ -51,13 +46,14 @@
   width: 30%;
   border: 2px solid white;
   border-radius: 5px;
-  height: 100%;
-
+  height: max-content;
   margin: auto 0;
+  flex-shrink: 0;
 }
 
 .movie-img-con img {
   width: 100%;
+  display: block;
   border-radius: 5px;
 }
 
@@ -68,4 +64,5 @@
   padding: 0.2vw 1vw;
   border: white 2px solid;
   border-radius: 50px;
+  cursor: pointer;
 }

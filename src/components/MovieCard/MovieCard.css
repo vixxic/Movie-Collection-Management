@@ -1,4 +1,4 @@
-.movie-card {
+/* .movie-card {
   height: 40vw;
   background-color: #231c6b;
   border-radius: 5px;
@@ -90,6 +90,111 @@
   padding: 0.2vw 1vw;
   border-radius: 50px;
   font-weight: bold;
+}
+
+.action-bar button.details {
+  background-color: #ffd23f;
+  color: black;
+}
+
+.action-bar button.edit {
+  background-color: #231c6b;
+}
+
+.action-bar button.delete {
+  background-color: #e5304f;
+} */
+
+.movie-card {
+  height: 40vw;
+  background-color: #231c6b;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.movie-poster-rating-con {
+  position: relative;
+  height: 70%;
+  min-height: 0;
+}
+
+.movie-poster-rating-con img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+
+.movie-poster-rating-con .rating {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffd23f;
+  right: 0;
+  margin: 1vw 1vw 0 0;
+  border-radius: 50px;
+  border: #231c6b 3px solid;
+  font-weight: bold;
+  color: #231c6b;
+  transform: rotate(10deg);
+}
+
+.about-the-movie-con {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 1vw;
+  box-sizing: border-box;
+  gap: 0.5vw;
+  min-height: 0;
+}
+
+.about-the-movie-con p {
+  margin: 0;
+}
+
+.about-the-movie-con .title {
+  color: white;
+  font-size: 1.3vw;
+  font-weight: bold;
+}
+
+.about-the-movie-con .director-year {
+  color: #8985b9;
+}
+
+.about-the-movie-con .genre {
+  background-color: #ff4f8b;
+  color: white;
+  font-size: 12px;
+  font-weight: 550;
+  border-radius: 50px;
+  width: max-content;
+  padding: 0.1vw 0.5vw;
+}
+
+.action-bar {
+  padding: 1vw;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  gap: 1vw;
+}
+
+.action-bar button {
+  width: 100%;
+  border: 2px solid white;
+  color: white;
+  padding: 0.2vw 1vw;
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .action-bar button.details {
