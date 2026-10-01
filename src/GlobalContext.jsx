@@ -12,6 +12,7 @@ export function MoviesProvider({ children }) {
   const [deleteClikedId, setDeleteClikedId] = useState("");
 
   const [searchInput, setSearchInput] = useState("");
+  const [ratingFilter, setRatingFilter] = useState("");
 
   const value = {
     movies,
@@ -34,6 +35,9 @@ export function MoviesProvider({ children }) {
 
     searchInput,
     setSearchInput,
+
+    ratingFilter,
+    setRatingFilter,
   };
   return (
     <MoviesContext.Provider value={value}>{children}</MoviesContext.Provider>

@@ -7,6 +7,8 @@ function Header() {
     setSomethingCliked,
     searchInput,
     setSearchInput,
+    ratingFilter,
+    setRatingFilter,
   } = useMoviesContext();
 
   return (
@@ -44,7 +46,19 @@ function Header() {
           />
         </div>
 
-        <div className="filter-con">any rating</div>
+        <div className="filter-con">
+          <select
+            value={ratingFilter}
+            onChange={(e) => setRatingFilter(e.target.value)}
+          >
+            <option value="">Any rating</option>
+            <option value="9">9+ Stars</option>
+            <option value="8">8+ Stars</option>
+            <option value="7">7+ Stars</option>
+            <option value="6">6+ Stars</option>
+            <option value="5">5+ Stars</option>
+          </select>
+        </div>
       </div>
     </section>
   );

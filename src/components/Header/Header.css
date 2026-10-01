@@ -70,3 +70,13 @@
   padding: 0.5vw 1vw;
   color: #8985b9;
 }
+
+.filter-con select {
+  background-color: #231c6b;
+  border: none;
+  color: white;
+}
+
+.filter-con select:focus {
+  outline: none;
+}

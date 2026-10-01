@@ -7,7 +7,7 @@ import { useState, useEffect } from "react";
 import { useMoviesContext } from "../../GlobalContext";
 
 function MoviesSection() {
-  const { movies, setMovies, searchInput } = useMoviesContext();
+  const { movies, setMovies, searchInput, ratingFilter } = useMoviesContext();
 
   const [loding, setLoding] = useState(true);
   const [filteredMovies, setFilteredMovies] = useState([]);
@@ -72,8 +72,15 @@ function MoviesSection() {
     setFilteredMovies(movies);
   };
 
-  const filteredBySearch = filteredMovies.filter((movie) => {
-    return movie.title.toLowerCase().includes(searchInput.toLowerCase());
+  const filteredBySearchAndDirector = filteredMovies.filter((movie) => {
+    const searchMatch =
+      movie.title.toLowerCase().includes(searchInput.toLowerCase()) ||
+      movie.director.toLowerCase().includes(searchInput.toLowerCase());
+
+    const ratingMatch =
+      ratingFilter === "" || movie.rating >= Number(ratingFilter);
+
+    return searchMatch && ratingMatch;
   });
 
   return (
@@ -92,7 +99,7 @@ function MoviesSection() {
         <Loding />
       ) : (
         <div className="movies-list-grid">
-          {filteredBySearch.map((movie) => (
+          {filteredBySearchAndDirector.map((movie) => (
             <MovieCard
               key={movie.id}
               id={movie.id}
