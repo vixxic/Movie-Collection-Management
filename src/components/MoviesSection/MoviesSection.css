@@ -1,0 +1,43 @@
+.movies-con {
+  padding: 1vw 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.category-bar {
+  display: flex;
+  gap: 1vw;
+  overflow-x: auto;
+}
+
+.category-bar::-webkit-scrollbar {
+  height: 5px;
+}
+
+.category-bar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.category-bar::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 50px;
+}
+
+.category-bar span {
+  background-color: #231c6b;
+  border: solid white 1px;
+  color: white;
+  padding: 0.2vw 1vw;
+  border-radius: 50px;
+  width: max-content;
+}
+
+.movies-list-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1vw;
+}

@@ -1,0 +1,31 @@
+.loading-container {
+  width: 100%;
+  height: max-content;
+  border: 2px dashed white;
+  padding: 5vw 0;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+}
+
+.loading-animation {
+  display: flex;
+  gap: 1vw;
+  margin: 0 auto;
+  max-width: 100px;
+  justify-content: center;
+}
+
+.loading-ball {
+  background-color: white;
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+}
+
+.loading-text {
+  color: white;
+  width: 100%;
+  text-align: center;
+}

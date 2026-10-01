@@ -1,0 +1,115 @@
+.add-movie-form-outer {
+  position: fixed;
+  top: 5%;
+  left: 35%;
+  z-index: 1000;
+}
+
+.add-movie-form-con {
+  position: fixed;
+  background-color: #231c6b;
+  margin: auto;
+  border: white solid 3px;
+  padding: 1vw;
+  box-sizing: border-box;
+  z-index: 1000;
+  border-radius: 5px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  justify-content: center;
+  box-shadow: #ff4f8b 8px 8px 0;
+}
+
+.add-movie-form-con h3 {
+  color: rgb(228, 228, 205);
+  margin: 0;
+}
+
+.form-input-con {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 5px;
+}
+
+.form-input-con label {
+  color: white;
+  font-size: 10px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.form-input-con input {
+  background-color: #231c6b;
+  border: 1px white solid;
+  padding: 0.5vw 1vw;
+  box-sizing: border-box;
+  border-radius: 7px;
+  color: rgb(206, 198, 174);
+  font-size: 11px;
+}
+
+.horizontal {
+  display: flex;
+  gap: 1vw;
+}
+
+.image-part {
+  display: flex;
+  width: 100%;
+  gap: 1vw;
+}
+
+.image-input {
+  width: 80%;
+}
+
+.img-preview-con {
+  width: 20%;
+}
+
+.img-preview-con .img-con {
+  width: 100%;
+  min-height: 100px;
+  border: 2px white dashed;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.img-preview-con .img-con img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 5px;
+}
+
+.add-movie-form-btns-con {
+  display: flex;
+  width: 100%;
+  gap: 5px;
+}
+
+.add-movie-form-btns-con button {
+  padding: 0.2vw 1vw;
+  border: white 2px solid;
+  border-radius: 50px;
+  color: white;
+  background-color: #231c6b;
+}
+
+.add-movie-form-btns-con .add-btn {
+  background-color: #ff4f8b;
+
+  font-weight: bold;
+}
+
+.add-movie-error {
+  color: rgb(255, 0, 0);
+  font-size: 12px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}

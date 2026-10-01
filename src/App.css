@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  background-color: #15104a;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  overflow-x: hidden;
+}
+
+.website-content {
+  margin: 40px auto;
+  max-width: 1200px;
+}
+
+.cover {
+  background-color: #15104a;
+  position: fixed;
+
+  top: 0;
+  width: 100vw;
+  height: 3000px;
+  opacity: 0.4;
+
+  z-index: 10;
+}

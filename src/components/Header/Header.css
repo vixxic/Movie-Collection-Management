@@ -1,0 +1,72 @@
+.header-title {
+  color: aliceblue;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.movie-tag-title {
+  background-color: #ffd23f;
+  color: #15104a;
+  border-radius: 15px;
+  padding: 0 0.5vw;
+
+  display: inline-block;
+  transform: rotate(-4deg);
+
+  box-shadow: #231c6b 8px 8px 2px;
+}
+
+.des-and-add-btn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.website-des {
+  color: #8985b9;
+  font-size: 1.2vw;
+}
+
+.add-btn-con button {
+  background-color: #ff4f8b;
+  color: white;
+  border: none;
+  padding: 0.8vw 1.5vw;
+  border-radius: 50px;
+  font-weight: 550;
+}
+
+.search-filter-con {
+  display: flex;
+  justify-content: space-between;
+  gap: 1vw;
+}
+
+.search-input-con {
+  background-color: #231c6b;
+  width: 85%;
+  border-radius: 5px;
+  padding: 0.5vw 1vw;
+}
+
+.search-input-con input {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  color: white;
+}
+
+.search-input-con input:focus {
+  outline: none;
+}
+
+.search-input-con input::placeholder {
+  color: #8985b9;
+}
+
+.filter-con {
+  background-color: #231c6b;
+  flex: 1;
+  border-radius: 5px;
+  padding: 0.5vw 1vw;
+  color: #8985b9;
+}
